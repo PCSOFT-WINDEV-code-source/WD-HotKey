@@ -1,0 +1,154 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CHotKey
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x3d770c3c41922c9b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAzBSpR5Y6m5r/8v9qcZxhZG23s3ChtMxNHqpt4yAWPl5EUNkAbuFkN2DMTVHA+xS7/Cmqg0BQm6LpBpPmUXCrIYYW4zwmYPAygwr5Iqm5kbl/tbFcex4oLzMyZMCvNY0h5iduV9teuenxej9Q=
+     code : |1+
+      // Cette classe permet d'ajouter/supprimer des HotKeys
+      
+      CHotKey est une classe
+      	m_sProcédure est une chaine		// Procédure appelée à chaque détection de HotKey
+      	m_bEvtBranché est un booléen	// Flag interne
+      Fin
+      
+      CONSTANTE
+      	MOD_ALT 	= 0x1
+      	MOD_CONTROL = 0x2
+      	MOD_SHIFT 	= 0x4
+      	WM_HOTKEY   = 0x312
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 4429022210937990346
+     type_code : 27
+     code : |1+
+      Procédure Constructeur(psProcédure)
+      // psProcédure est la procédure à appeler lors d'une détection de HotKey
+      
+      :m_sProcédure = psProcédure
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 4429022212407766218
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : nAjouterHotKey
+     internal_properties : CAAAAAgAAACGMTrNXBQpMdu4xtDsaMqSX39gIJvZYUycQVoZHhHfPY4tWvKMrGTUztWlrYPJKc+EOhGSzpgbqaz0+SidKPuNl4fBtFEGIuC2gcOsoNZk4ijOoEHbe1fd+Mrp/vDeVW6I8O2oLjl4S8YMxvGnM1dMPUIToKRvPDQ26LdZXpExY7VnxI+UzjVj/dnK5ZTJRaqXFjhQAZDd85M/D9GXWkPDcg==
+     procedure_id : 4429022228526021800
+     type_code : 12
+     code : |1+
+      PROCEDURE nAjouterHotKey(psTouche, pbCtrl, pbAlt, pbShift)
+      // psTouche est la touche principale
+      // pbCtrl est à vrai si la touche CTRL doit être enfoncée
+      // pbAlt est à vrai si la touche ALT doit être enfoncée
+      // pbShift est à vrai si la touche SHIFT doit être enfoncée
+      // Renvoie l'identifiant de la HotKey
+       
+      nControl est un entier
+      nAtom est un entier
+      nAscTouche est un entier
+      
+      // Touches de contrôle
+      SI pbCtrl nControl	+= ::MOD_CONTROL
+      SI pbAlt nControl 	+= ::MOD_ALT
+      SI pbShift nControl += ::MOD_SHIFT
+      
+      // Touche de 1 caractère
+      SI Taille(psTouche)=1 ALORS
+      	// Code ASCII de la touche
+      	nAscTouche = Asc(psTouche)
+      	
+      SINON
+      	SELON psTouche
+      		CAS "F1"
+      			nAscTouche=112
+      		CAS "F2"
+      			nAscTouche=113
+      		CAS "F3"
+      			nAscTouche=114
+      		CAS "F4"
+      			nAscTouche=115
+      		CAS "F5"
+      			nAscTouche=116
+      		CAS "F6"
+      			nAscTouche=117
+      		CAS "F7"
+      			nAscTouche=118
+      		CAS "F8"
+      			nAscTouche=119
+      		CAS "F9"
+      			nAscTouche=120
+      		CAS "F10"
+      			nAscTouche=121
+      		CAS "F11"
+      			nAscTouche=122
+      		CAS "F12"
+      			nAscTouche=123
+      	FIN
+      FIN
+      
+      // Détermination d'un numéro unique pour la HotKey
+      nAtom = API("Kernel32", "GlobalAddAtomA", psTouche+pbCtrl+pbAlt+pbShift)
+      
+      // Ajout de la HotKey
+      API("User32","RegisterHotKey", Handle(FenEnCours()), nAtom, nControl, nAscTouche)
+      
+      // si l'événement n'a pas encore été branché
+      si :m_bEvtBranché=faux alors
+      	:EvénementHotKey()
+      FIN
+      
+      RENVOYER nAtom
+     type : 458752
+   -
+     name : SupprimerHotKey
+     internal_properties : CAAAAAgAAAD83xDTogoW6QFQjgj6GHokicbytbHtA1SWVdKFbKV7R7hn+pCqsEag8O3Rja1xtck2XHWErNS1+UrwITSTLHMjZYn56tcqbAxg2Qf0Wl7w5OkN54CaBNrk4eX0aSsVRI99q5ADwQ5/9pOLjVjeaka5SpV+I290mx87V35AVRRscKJKF8pvO7Re/qQdIM8P68WWN1mxYlfGXAp8FcuJSF3ZaA==
+     procedure_id : 4429022674448666493
+     type_code : 12
+     code : |1+
+      Procédure SupprimerHotKey(pnAtom est un entier sur 8)
+      
+      // Fin de capture de Hotkey
+      API("User32", "UnregisterHotKey", Handle(FenEnCours()), pnAtom)
+      
+     type : 458752
+   -
+     name : EvénementHotKey
+     procedure_id : 4429033477322911591
+     type_code : 12
+     code : |1-
+      Procédure EvénementHotKey()
+      
+      // A chaque détection d'un HotKey, la procédure :m_sProcédure est appelée
+      Evénement(:m_sProcédure, "*.*", ::WM_HOTKEY)
+      
+      :m_bEvtBranché = vrai
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x10f6d19a02cdf43a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

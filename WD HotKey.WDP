@@ -1,0 +1,133 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD HotKey
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : WD HotKey
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAAC+ieBQpidpxMezBsovFNsWDXnlSuRppnKR0pYfwKzBJBnMPS0V+jqir+vG7iobfPxpdlWcetqTpzKuDefFcKa35knDRDFHAT62WMOMHbX3frKrhNwbPTCdiAu4gSgPpnCFT5vz8k+xQy7S2PhhYld7GgKJ2KpkEB5QHAsbN4FiLXd+EKfFyY3HKnz7IHGEmpfJC5ahkXrwEXTJUwHLilb7f52axmlFCYMVdNPuz3F3swFlS2lMGaAxdZ4F0cujJHaDWd3RK9sqpXnDEYPSxyTwbMcR4W/vdkmn6I4i3byLRzxyewVDGTLdt9MP7F3MTrhplPHh36pUTFQj5MXylSjC54pxbbBTsfbFpsJzGepZ8EY0hqcHQfo2E9qrmj1H3IC3yXQBbaZUJDkByPFu4+200Is5AuvtOWGFhmxINfoZv3SHhI03KSh6rS0Y+iaBcOq9hPMAXkw5Ol4rZ/JFh5hvqLtZyhDdSINWfqyV4lJ55fRwt0OZCw/Hezdq3BxO3nUYzvwtyixAry4W7ZFFp2em/G3ZX9jgyFhlsmW6M9g3LzkUGWydc0RigKpu3OJMZfkiBqQoF6QudnZ4T66nSJJ1ucuz23ETEun83gZxdRilqF8U1FdHGo644XGya4pfsldaWItU6EffGD/YFjAzvOOHTuLarX23yQxDUno1x7oDKihvpWeriAam5nn2U1+dSMcSwDuAeXLiwh6lvNkDh4WpSGmCjQG8+annkGU64iElNUl2V7+UP/SRaNi6l0Dd1vV5HW8KzLxXaA65Rsvu7R/Obwgk06dmJZXfA/MFq9X84pkYxcGlVtN09UH2hjPbKT9Xy/sfcWLBe7j2/pv4ihU1iqoniHFafewRgX8cR3eSL2f4aOEVreOZJJ7UNUxeff99FmOJxgiwEJOj6oNeDLUe+8RWDhgtTvl0y/GE4CBbvhT/2jYBithwjPtwSDrzncs/3d2v3OY85fp5Oj+wJ3A9JWDXdKn7VJqGMlGxh8wBMHP7ZtD8OIDicXPr8HULITjbaDgb3URzvaC2p13NGxx5cg+MnAv4BsPesSUu3cKzOuOM4YUVoWGXMZ/H6VcouSYKxpBAZVqmua6Dx2khr9vHu3n4YufLhlxj6VE1SG6K50cNVJ7hhevRuQnOqlhjzGD3VWHgA3BOJSLYNZpgboebUz3MmEgIikaKMKEd2458lOzAGxbQbj9irjKJaY/l0arHe3AbkrvDjYV1WeNlssOzM5nZtf4gMWn1Y/UWYX61c02xtzzdBD21QFbH5EQCIH8g7frMORtmEyMOJB/P4gQgdqdypz9AOcnu7G4hdXpoQGDP91EJZVg/RI/8QscHwZ4x1i8bFcM9MqOOWvWnisttzXbohTgXgWEzhx4qu8d6kre1VXRrM1rG/4oonuRvN0fXUEBpNmKIYSU/0JIMafw+pZ2xqkvDb3/c028T08/xdC53rZKVwa8M1DR7wPhPxvhUjr5u0QwhDYUJCiW1iGwHzHYsFZp2WV40fOXwK1dCmHHM4VRr+MnO3feIOnQ+bqRb0cCeYaeNOkAKUWT1fvHgwVEvqbPh1FYaUdnmOl6csufA9NuKrTy6hp88vq6Uy/gJxHStPVbb35Kohi646es+1nXCvKhFpLEHOPbHqur3qSZqGtPxiL12nKtEgO2NhgBErmv++8dkg9hMr+qaw0sJpPpnssJY+TXzQzIbYOmtMe9J5ovFZmqZ2fkYnTqEFS/uJfwfCmk4/AIjAaPbLf2KAqEzDsjV8P71Z/7zVay3Qn8oWRNHAvw4a3O6+2gYR2tozC4fr+v/bs9DehTOENMxECmXsEwsWmzKtEybPccKGpm5oB/vZUJ4ec9b5vnCPM5+z4Be8Zr1eMjpSZG+vuQtPN/OKqwoW85ssFEd4Gz+ytk/xBm7UFsj7Z5WXcc/QyVOcU+Iaw0+afYJxhGL2lolshZAe3jnINKW3rHrifW2e9+b5eR2zBDA8mffmYjEkNgoJLi/p6PYGsTgfRv36uWTrsyw72Msa+B/iWF4
+ configurations :
+  -
+    name : WD HotKey
+    internal_properties : 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
+    configuration_id : 14335552752058408144
+    type : 1
+    generation_name : WD HotKey.exe
+    version :
+     version : VI200030B
+     autoincrement_version : false
+    icon_filename : .\ESC.ICO
+    language : 1
+ elements :
+  identifier : 0x4ac601040017e2a7
+  elements :
+   -
+     name : FEN_Propriété
+     identifier : 0x413c1a5f000c2b7c
+     internal_properties : CAAAAAgAAADZtYGFIh8XGCZcgiAmxrlM+ZrEBNDj8srSpZYe/i/vKddlAb5U7Mlmg7oknGScZFS8RA==
+     physical_name : .\FEN_Propriete.wdw
+     type : 2
+   -
+     name : CIconeAssocié
+     identifier : 0x413c1a5f00082b7c
+     internal_properties : CAAAAAgAAADpZdE18q8HKDZs0pB2N+n8BVAsPL763tCwCZgU6VTGAg4SsA8EPBk2U8o0jBTMtCTsdA==
+     physical_name : .\CIconeAssocie.wdc
+     type : 4
+   -
+     name : WinDevMessageBox
+     identifier : 0x45fbeb2100d89d69
+     internal_properties : CAAAAAgAAAAvKwcbqNVdDtp2vAZ8DyH3cd5EBKe5Aq5IitY7v1HNyzX/SFWMdB36e6Aa5q4i3tI6Og==
+     physical_name : .\WinDevMessageBox_1.WDW
+     type : 2
+   -
+     name : TEST_Principale
+     identifier : 0x40462ff30039c7ce
+     internal_properties : CAAAAAgAAAABfXmtGkfvgE60agj+4ZUgJXTMBKXPQy184fGY0i7sJCw0Vuk8xKG+KxKMdDy0TLwEDA==
+     physical_name : .\TEST_Principale.wxt
+     type : 17
+   -
+     name : CHotKey
+     identifier : 0x413c1a5f000b2b7c
+     internal_properties : CAAAAAgAAACa8EJGZSKKlV3HvX+NyU5FdmkFZVoMPup8IVu2XoIK3hLI/LNlk3KR/iWfGZlXI5V/hw==
+     physical_name : .\CHotKey.wdc
+     type : 4
+   -
+     name : Procedures globales de WD HotKey
+     identifier : 0x413c1a5f00092b7c
+     internal_properties : CAAAAAgAAABFwa3xTmtDXGqAdrRKjw3wCSRQkBUfPc90SyumTLReskb6qHegWD3aN+7o0FCAeGhQ0A==
+     physical_name : .\Procedures globales de WD HotKey.wdg
+     type : 7
+   -
+     name : FEN_Principale
+     identifier : 0x413c1a5f000d2b7c
+     internal_properties : CAAAAAgAAADbt4OHJGFJUhyGcLJAbqeO06COpjSx+NLRVK2kvH+XCfvV1WqyTjfUPeTe2lqWYla+Rg==
+     physical_name : .\FEN_Principale.wdw
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x45fbeb2100e09e44
+     internal_properties : CAAAAAgAAACB8z9rtBEg4LLQljOukNmZ3cXuI54veh0pjeigo4L7ux8C1G/zkEI10fMvSGuPKJOE
+     physical_name : .\WinDevDialogBox_1.WDW
+     type : 2
+  other_elements :
+   -
+     physical_name : .\Description.rtf
+   -
+     physical_name : .\Description.gif
+  analysis : .\WD HotKey.ana\WD HotKey.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ wd_style_sheet : ".\\WD HotKey.sty\r\n.\\WD7 HotKey.gab"
+ code_elements :
+  internal_properties : CAAAAAgAAADX3Ykshi27iK8ZI/2T0efKXxhdOA9ZV2wx3c9dgLLYz7Tn1qDmZKRUKXS4NfAM3lqDjAQQoTmgYcAxB8E3bpib
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      HCréationSiInexistant(HOTKEY)
+      
+      hgererep(faux)
+      
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196610
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD HotKey
+     identifier : 0x4ac601040020e324
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
